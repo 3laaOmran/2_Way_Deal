@@ -31,7 +31,7 @@ class AppTextButton extends StatelessWidget {
       style: ButtonStyle(
         shape: MaterialStateProperty.all<RoundedRectangleBorder>(
           RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(borderRadius ?? 16.0),
+            borderRadius: BorderRadius.circular(borderRadius ?? 25.0),
           ),
         ),
         backgroundColor: MaterialStatePropertyAll(
@@ -44,7 +44,7 @@ class AppTextButton extends StatelessWidget {
           ),
         ),
         fixedSize: MaterialStateProperty.all(
-          Size(buttonWidth?.w ?? double.maxFinite,buttonHeight?.h ?? 50.h),
+          Size(buttonWidth?.w ?? double.maxFinite, buttonHeight?.h ?? 50.h),
         ),
       ),
       onPressed: onPressed,

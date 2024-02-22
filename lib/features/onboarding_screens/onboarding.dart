@@ -90,7 +90,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                     ],
                   ),
                   Container(
-                    margin: const EdgeInsets.all(40),
+                    margin:
+                        EdgeInsets.symmetric(vertical: 40.h, horizontal: 20.w),
                     child: AppTextButton(
                       buttonText:
                           currentIndex == onboardingContentList.length - 1
@@ -110,17 +111,18 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 ],
               ),
               Positioned(
-                  top: 10.h,
-                  right: 15.w,
-                  child: GestureDetector(
-                    onTap: () {
-                      context.pushNamed(Routes.loginScreen);
-                    },
-                    child: Text(
-                      'Skip',
-                      style: TextStyles.font20Whitebold,
-                    ),
-                  ))
+                top: 10.h,
+                right: 15.w,
+                child: GestureDetector(
+                  onTap: () {
+                    context.pushNamed(Routes.loginScreen);
+                  },
+                  child: Text(
+                    'Skip',
+                    style: TextStyles.font20Whitebold,
+                  ),
+                ),
+              ),
             ],
           ),
         ),
