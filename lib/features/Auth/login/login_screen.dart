@@ -64,7 +64,7 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   BlocBuilder<LoginBloc, LoginState>(builder: (context, state) {
                     return Column(
-                      mainAxisAlignment: MainAxisAlignment.start,
+                      crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         resuableText(text: "Email Address", fontsize: 17.sp),
                         CustomTextFormField(
