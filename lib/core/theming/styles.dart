@@ -4,8 +4,8 @@ import 'font_weight_helper.dart';
 
 class TextStyles {
   static TextStyle font50blackbold = TextStyle(
-    fontSize: 50.sp,
-    fontFamily: 'Comfortaa',
+    fontSize: 20.sp,
+  
     fontWeight: FontWeightHelper.bold,
     color: Colors.black,
   );

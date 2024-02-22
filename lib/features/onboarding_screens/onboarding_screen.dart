@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:two_way_deal/core/widgets/custom_button.dart';
+import 'package:two_way_deal/features/onboarding_screens/widgets/onboarding_model_list.dart';
 import '../../core/helpers/extensions.dart';
 import '../../core/helpers/spacing.dart';
 import '../../core/routing/routes.dart';
 import '../../core/theming/colors.dart';
 import '../../core/theming/styles.dart';
-import '../../core/widgets/custom_button.dart';
-import 'widgets/onboarding_model_list.dart';
 
 class OnboardingScreen extends StatefulWidget {
   const OnboardingScreen({super.key});
@@ -55,29 +55,33 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       },
                       itemCount: onboardingContentList.length,
                       itemBuilder: (context, index) {
-                        return Column(
-                          children: [
-                            Image.asset(
-                              onboardingContentList[index].image,
-                            ),
-                            verticalSpace(40),
-                            Padding(
-                              padding: EdgeInsets.only(left: 15.w, right: 25.w),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Text(
-                                    onboardingContentList[index].mainText,
-                                    style: TextStyles.font50blackbold,
-                                  ),
-                                  Text(
-                                    onboardingContentList[index].smallText,
-                                    style: TextStyles.font20blackbold,
-                                  ),
-                                ],
+                        return SingleChildScrollView(
+                          child: Column(
+                            children: [
+                              Image.asset(
+                                onboardingContentList[index].image,
                               ),
-                            )
-                          ],
+                              verticalSpace(10),
+                              Padding(
+                                padding:
+                                    EdgeInsets.only(left: 15.w, right: 25.w),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Text(
+                                      onboardingContentList[index].mainText,
+                                      style: TextStyles.font50blackbold,
+                                      
+                                    ),
+                                    Text(
+                                      onboardingContentList[index].smallText,
+                                      style: TextStyles.font20blackbold,
+                                    ),
+                                  ],
+                                ),
+                              )
+                            ],
+                          ),
                         );
                       },
                     ),
@@ -100,7 +104,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                       textStyle: TextStyles.font20Whitebold,
                       onPressed: () {
                         if (currentIndex == onboardingContentList.length - 1) {
-                          context.pushNamed(Routes.loginScreen);
+                          context.pushNamed(Routes.chooseAccounttypeScreen);
                         }
                         _controller.nextPage(
                             duration: const Duration(milliseconds: 100),
@@ -115,7 +119,7 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
                 right: 15.w,
                 child: GestureDetector(
                   onTap: () {
-                    context.pushNamed(Routes.loginScreen);
+                    context.pushNamed(Routes.chooseAccounttypeScreen);
                   },
                   child: Text(
                     'Skip',
