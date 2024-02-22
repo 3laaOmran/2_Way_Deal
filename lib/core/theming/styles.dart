@@ -1,11 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:two_way_deal/core/theming/font_weight_helper.dart';
+import 'font_weight_helper.dart';
 
 class TextStyles {
-  static TextStyle font24blackbold = TextStyle(
-    fontSize: 24.sp,
+  static TextStyle font50blackbold = TextStyle(
+    fontSize: 50.sp,
+    fontFamily: 'Comfortaa',
     fontWeight: FontWeightHelper.bold,
     color: Colors.black,
+  );
+  static TextStyle font20blackbold = TextStyle(
+    fontSize: 20.sp,
+    fontFamily: 'Comfortaa',
+    fontWeight: FontWeightHelper.bold,
+    color: Colors.black,
+  );
+  static TextStyle font20Whitebold = TextStyle(
+    fontSize: 20.sp,
+    fontFamily: 'Comfortaa',
+    fontWeight: FontWeightHelper.bold,
+    color: Colors.white,
   );
 }
