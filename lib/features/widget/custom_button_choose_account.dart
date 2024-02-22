@@ -34,7 +34,7 @@ class _CustomButtonAccountState extends State<CustomButtonAccount> {
           });
         },
         style: ElevatedButton.styleFrom(
-          primary: isPressed
+          backgroundColor: isPressed
               ? ColorManager.mainOrange
               : Colors.white, // Change color dynamically
         ),
