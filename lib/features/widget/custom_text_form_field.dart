@@ -62,6 +62,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
           fillColor: Colors.white,
           prefixIcon: widget.typefield == "phone"
               ? Row(
+                  mainAxisSize: MainAxisSize.min,
                   children: [
                     SizedBox(
                       width: 10.w,
@@ -72,7 +73,6 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                     ),
                     Text(
                       "  +20",
-                      
                       style: TextStyle(
                           fontSize: 15.sp, fontWeight: FontWeight.bold),
                     ),

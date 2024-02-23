@@ -56,9 +56,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(
-                        height: height * 0.15,
-                      ),
+                      verticalSpace(80),
+                      // SizedBox(
+                      //   height: height * 0.15,
+                      // ),
                       Text(
                         "Sign Up",
                         style: TextStyle(
@@ -104,8 +105,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               resuableText(text: "Phone", fontsize: 17.sp),
                               CustomTextFormField(
                                 hintText: "Phone",
-                                controller: phoneController,
-                                issecurse: false,
+                                controller: passwordController,
+                                issecurse: true,
                                 icon: Icons.phone,
                                 enable: true,
                                 typefield: "phone",
@@ -134,7 +135,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         color: ColorManager.mainOrange,
                         textcolor: Colors.white,
                       ),
-                      verticalSpace(20)
+                      verticalSpace(30)
                       // SizedBox(
                       //   height: height * 0.1,
                       // ),
