@@ -37,7 +37,7 @@ class _ChooseAccountTypeState extends State<ChooseAccountType> {
                   fontWeight: FontWeight.bold),
               resuableText(
                   text: "Who are you?",
-                  fontsize: 27.sp,
+                  fontsize: 25.sp,
                   fontWeight: FontWeight.normal),
               SizedBox(
                 height: height * 0.05,

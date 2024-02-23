@@ -13,17 +13,17 @@ class OnboardingContentModel {
 List<OnboardingContentModel> onboardingContentList = [
   OnboardingContentModel(
     image: 'assets/images/onboarding_one.png',
-    mainText: 'High Quality Food',
+    mainText: 'High\nQualityFood',
     smallText: ' Carefully selected',
   ),
   OnboardingContentModel(
     image: 'assets/images/onboarding_two.png',
-    mainText: 'Clean Environment',
+    mainText: 'Clean\nEnvironment',
     smallText: 'Save The planet',
   ),
   OnboardingContentModel(
     image: 'assets/images/onboarding_three.png',
-    mainText: 'Reduce Food Waste',
-    smallText: 'Reducing  Famines',
+    mainText: 'Reduce\nFood Waste',
+    smallText: 'Reducing Famines',
   ),
 ];

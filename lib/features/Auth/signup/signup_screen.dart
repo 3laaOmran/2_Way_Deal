@@ -90,7 +90,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         CustomTextFormField(
                             hintText: "Phone",
                             controller: phoneController,
-                            issecurse: false,
+                            issecurse: true,
                             icon: Icons.phone,
                             enable: true,
                             typefield: "phone"),
