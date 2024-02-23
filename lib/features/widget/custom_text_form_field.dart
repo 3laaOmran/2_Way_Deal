@@ -71,7 +71,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                       color: ColorManager.mainOrange,
                     ),
                     Text(
-                      "+20",
+                      "  +20",
                       style: TextStyle(
                           fontSize: 15.sp, fontWeight: FontWeight.bold),
                     ),
