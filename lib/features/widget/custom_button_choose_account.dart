@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:two_way_deal/core/theming/colors.dart';
 
+// ignore: must_be_immutable
 class CustomButtonAccount extends StatefulWidget {
   String? text;
 
