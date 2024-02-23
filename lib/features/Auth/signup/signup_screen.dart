@@ -27,7 +27,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   void dispose() {
     // TODO: implement dispose
     super.dispose();
-    emailController.dispose();
+    // emailController.dispose();
   }
 
   @override
@@ -89,8 +89,8 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         resuableText(text: "Phone", fontsize: 17.sp),
                         CustomTextFormField(
                             hintText: "Phone",
-                            controller: passwordController,
-                            issecurse: true,
+                            controller: phoneController,
+                            issecurse: false,
                             icon: Icons.phone,
                             enable: true,
                             typefield: "phone"),

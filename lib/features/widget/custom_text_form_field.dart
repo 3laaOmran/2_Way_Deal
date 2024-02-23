@@ -62,6 +62,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
           fillColor: Colors.white,
           prefixIcon: widget.typefield == "phone"
               ? Row(
+                  mainAxisSize: MainAxisSize.min,
                   children: [
                     SizedBox(
                       width: 10.w,
@@ -71,7 +72,7 @@ class _CustomTextFormFieldState extends State<CustomTextFormField> {
                       color: ColorManager.mainOrange,
                     ),
                     Text(
-                      "+20",
+                      "+20\t",
                       style: TextStyle(
                           fontSize: 15.sp, fontWeight: FontWeight.bold),
                     ),
