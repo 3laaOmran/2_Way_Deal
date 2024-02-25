@@ -21,7 +21,6 @@ class _ConfirmAccountState extends State<ConfirmAccount> {
 
   var controller4 = TextEditingController();
 
-  bool isFilled = true;
 
   @override
   Widget build(BuildContext context) {
